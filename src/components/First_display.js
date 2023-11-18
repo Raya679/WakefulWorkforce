@@ -18,6 +18,31 @@ export default function FirstDisplay() {
                     <div> <br /> <br /> <br /> <br /> <br /> <br />  <br /> <br /> <br /></div>
                 </div>
             </div>
+            <div className='flex mt-24'>
+                <div className="text ml-10">
+                    <div className="text-left text-white text-[88px] font-bold font-['Fredoka One']">CREATE SESSIONS</div>
+                    <div className="w-[572px] h-[216px] text-right text-cyan-400 text-[39px] font-normal font-['Fredoka One'] ml-44">FOCUS ON YOURSELF<br />NO DISTRACTIONS<br />JUST YOU AND YOUR WORK</div>
+                </div>
+                <img className="w-[512px] h-[512px] ml-96 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_2.png'} alt="My Image" />
+
+            </div>
+            <div className='flex mt-52'>
+                <img className="w-[512px] h-[512px] ml-40 mt-10" src={process.env.PUBLIC_URL + '/image_3.png'} alt="My Image" />
+                <div className="text ml-96 mt-36">
+                    <div className="text-center text-white text-[88px] font-bold font-['Fredoka One']">SCHEDULE</div>
+                    <div className="w-[464px] h-[216px] text-cyan-400 text-[39px] font-normal font-['Fredoka One']">PLAN AHEAD<br />SET PRIORITIES<br />GET THE JOB DONE</div>
+                </div>
+            </div>
+            <div className='flex mt-52'>
+                <div className="text ml-44 mt-16">
+                    <div className="text-white text-[88px] font-bold w-[554px] h-[216px] text-right font-['Fredoka One']">ANALYSE YOURSELF</div>
+                    <div> <br /> </div>
+                    <div> <br /> </div>
+                    <div className="w-[554px] h-[216px] text-right text-cyan-400 text-[35px] font-normal font-['Fredoka One']">IN-DEPTH ANALYTICS<br />UNDERSTAND YOUR WEAKNESSES AND STRENGTHS<br /></div>
+                </div>
+                <img className="w-[512px] h-[512px] ml-auto mr-36 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_4.png'} alt="My Image" />
+
+            </div>
         </>
     );
 }

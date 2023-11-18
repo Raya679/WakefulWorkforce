@@ -15,7 +15,7 @@ export default function Homepage() {
                     <button type="button" className="w-[449px] h-[79px] bg-cyan-400 rounded-[50px] py-6 text-slate-950 text-[40px] font-bold font-['Fredoka One'] font-extrabold  flex items-center justify-center hover:text-white ml-96  hover:bg-cyan-700">
                         START A SESSION
                     </button>
-                    <div> <br /> <br /> <br /> <br /> <br /> <br />  <br /> <br /> <br /></div>
+
                 </div>
             </div>
             <div className='flex mt-24'>

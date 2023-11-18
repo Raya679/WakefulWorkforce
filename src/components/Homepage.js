@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FirstDisplay() {
+export default function Homepage() {
     return (
         <>
             <div className="flex">

@@ -5,9 +5,9 @@ export default function Homepage() {
         <>
             <div className="flex">
                 <div className="mt-[-50px]">
-                    <img className="w-[1200px] h-[1100px]" src={process.env.PUBLIC_URL + '/time.png'} alt="My Image" />
+                    <img className="w-[1200px] h-[1100px]" src={process.env.PUBLIC_URL + '/time.png'} alt="My" />
                 </div>
-                <div className="right-text mr-20 mt-16"> {/* Adjusted margin-left value */}
+                <div className="right-text mr-20 mt-16">
                     <div className="text-right text-cyan-400 text-[60px] font-bold font-['Fredoka One'] p-6">FOCUS<br />ACHIEVE<br />SUCCEED</div>
                     <div className="w-[850px] h-[370px] text-right text-white text-8xl font-semibold font-['Fredoka One'] p-6 py-6" style={{ lineHeight: '1.5' }}>
                         <b>WAKEFUL <br />WORKFORCE</b>
@@ -23,24 +23,24 @@ export default function Homepage() {
                     <div className="text-left text-white text-[88px] font-bold font-['Fredoka One']">CREATE SESSIONS</div>
                     <div className="w-[572px] h-[216px] text-right text-cyan-400 text-[39px] font-normal font-['Fredoka One'] ml-44">FOCUS ON YOURSELF<br />NO DISTRACTIONS<br />JUST YOU AND YOUR WORK</div>
                 </div>
-                <img className="w-[512px] h-[512px] ml-96 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_2.png'} alt="My Image" />
+                <img className="w-[512px] h-[512px] ml-96 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_2.png'} alt="My" />
 
             </div>
             <div className='flex mt-52'>
-                <img className="w-[512px] h-[512px] ml-40 mt-10" src={process.env.PUBLIC_URL + '/image_3.png'} alt="My Image" />
-                <div className="text ml-96 mt-36">
+                <img className="w-[512px] h-[512px] ml-40 mt-10" src={process.env.PUBLIC_URL + '/image_3.png'} alt="My" />
+                <div className="text ml-auto mr-44 mt-36">
                     <div className="text-center text-white text-[88px] font-bold font-['Fredoka One']">SCHEDULE</div>
                     <div className="w-[464px] h-[216px] text-cyan-400 text-[39px] font-normal font-['Fredoka One']">PLAN AHEAD<br />SET PRIORITIES<br />GET THE JOB DONE</div>
                 </div>
             </div>
-            <div className='flex mt-52'>
+            <div className='flex mt-52 mb-32'>
                 <div className="text ml-44 mt-16">
                     <div className="text-white text-[88px] font-bold w-[554px] h-[216px] text-right font-['Fredoka One']">ANALYSE YOURSELF</div>
                     <div> <br /> </div>
                     <div> <br /> </div>
                     <div className="w-[554px] h-[216px] text-right text-cyan-400 text-[35px] font-normal font-['Fredoka One']">IN-DEPTH ANALYTICS<br />UNDERSTAND YOUR WEAKNESSES AND STRENGTHS<br /></div>
                 </div>
-                <img className="w-[512px] h-[512px] ml-auto mr-36 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_4.png'} alt="My Image" />
+                <img className="w-[512px] h-[512px] ml-auto mr-36 mt-[-50px]" src={process.env.PUBLIC_URL + '/image_4.png'} alt="My " />
 
             </div>
         </>

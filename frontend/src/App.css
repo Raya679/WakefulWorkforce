@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -38,4 +43,37 @@
 }
 .blank{
   background-color: rgb(0, 247, 255);
+}
+
+
+
+@keyframes underlineExpand {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+.underline-animation {
+  @apply cursor-pointer relative text-white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: transparent;
+    transform-origin: 50% 100%;
+    transform: scaleX(0);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:hover::before {
+    background-color: #27EDED;
+    animation: underlineExpand 0.3s ease forwards;
+  }
 }

@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
-import Signup from "./pages/simpleform"
+import Signup from "./pages/signup"
 import { Route, Routes } from "react-router-dom"
 import PrivateRoute from "./Routes/AuthPrivateRoutes"
 import AboutUs from './pages/AboutUs';

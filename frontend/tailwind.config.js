@@ -12,14 +12,15 @@ module.exports = {
       },
       fontFamily: {
         'lexend': ['Lexend', 'sans'],
-        'oswald': ["Oswald", 'Arial']
-      },
-      colors: {
-        'primary': '#000A1F',
-        'secondary': '#27EDED'
+        'oswald': ["Oswald", 'Arial'],
+        'nunito': ['Nunito Sans', 'sans-serif'],
+        'fedroka': ['Fredoka', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    "prettier-plugin-tailwindcss"
+  ],
 }
 

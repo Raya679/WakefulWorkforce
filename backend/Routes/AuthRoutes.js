@@ -1,10 +1,12 @@
 const { Router } = require("express")
-const { login } = require("../controllers/AuthController")
+const { signup } = require("../controllers/AuthController")
+const { isAuthenticated } = require("../middleware/isAuthenticated")
 
 const router = Router();
 
-router.get("/", (req, res) => res.json({ "status": "connected" }))
-router.post('/api/login', login)
-router.get('/api/login', (req, res) => { res.send("CONNE") })
+router.get("/", (req, res) => res.json({ "status": "connected to backend" }))
+router.post('/api/signup', signup)
+// router.get("/api/token", isAuthenticated)
+
 
 module.exports = router

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
 import Signup from "../pages/signup"
 
 const PrivateRoute = ({ element }) => {

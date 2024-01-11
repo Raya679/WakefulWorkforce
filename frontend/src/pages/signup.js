@@ -1,6 +1,6 @@
 import { useState } from "react"
 import axios from 'axios';
-import AboutUs from "./AboutUs";
+import Questionnaire from "./questionnaire"
 import { Link } from "react-router-dom";
 
 
@@ -30,7 +30,7 @@ export default function Simple() {
     }
 
     if (isAuth === "true") {
-        return (<AboutUs />)
+        return (<Questionnaire />)
     }
 
     return (

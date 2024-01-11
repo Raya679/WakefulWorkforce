@@ -10,7 +10,7 @@ function isAuthenticated(req, res, next) {
                 res.status(401).send({ "status": "Not verified" })
                 next()
             }
-            res.status(200).send({ "status": "success" })
+            res.status(200).send({ "token": decodedToken })
             next();
         })
     } else {

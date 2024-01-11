@@ -23,3 +23,26 @@
 3. HTTPOnly
 
     setting HttpOnly : true, allows the use of localStorage.getItem("jwt") but makes the site more vulnerable (XSS attacks)
+
+4. React custom hook names
+
+    Always use "use" in a custom hook name since the hook uses existing react hooks eg :
+
+    ```js
+        function useFunctionName(){
+            // code
+        }
+    ```
+
+5. Status Codes
+    - 302 : found
+    - 200 : OK
+    - 201 : Created
+    - 204 : No content
+    - 400 : Bad Request
+    - 401 : Unauthorized
+    - 404 : Not found
+    - 403 : Forbidden
+    - 500 : Internal Server Error
+    - 502 : Bad Gateway
+    - 503 : Service Unavailable

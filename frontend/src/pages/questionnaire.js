@@ -1,8 +1,12 @@
 import { useState } from "react";
 import axios from "axios"
 import AboutUs from "./AboutUs"
+import useAuthContext from "../hooks/useAuthContext";
+import { Navigate } from "react-router-dom";
 
 const Questionnaire = () => {
+
+    const { isAuthenticated } = useAuthContext();
 
     const [answers, setAns] = useState({
         job: "Student",
@@ -37,6 +41,10 @@ const Questionnaire = () => {
         } catch (err) {
             console.log(err)
         }
+    }
+
+    if (!isAuthenticated) {
+        return <Navigate to="/form" />
     }
 
     return (

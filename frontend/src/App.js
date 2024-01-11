@@ -16,7 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/form" element={<Signup />} />
-        <Route path="/aboutus" element={<PrivateRoute element={<AboutUs />} />} />
+        {/* <Route path="/aboutus" element={<PrivateRoute element={<AboutUs />} />} /> */}
+        <Route path="/aboutus" element={<AboutUs />} />
       </Routes>
     </div>
 

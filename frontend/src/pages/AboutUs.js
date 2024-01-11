@@ -1,11 +1,5 @@
 import React from "react";
-import useAuthContext from "../hooks/useAuthContext"
-import { Navigate } from "react-router-dom";
 const AboutUs = () => {
-    const { isAuthenticated } = useAuthContext();
-    if (!isAuthenticated) {
-        return <Navigate to="/login" />
-    }
     return (
         <>
             <div className="h-full w-full bg-slate-900 overflow-x-hidden ">

@@ -1,6 +1,13 @@
-import React from "react";
+
+import React, { useEffect } from 'react';
+
 const AboutUs = () => {
-    return (
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    return ( 
+
+
         <>
             <div className="h-full w-full bg-slate-900 overflow-x-hidden ">
                 <div className="w-screen flex justify-center align-middle">

@@ -9,17 +9,17 @@ const ContactUs = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         const isFormValid = Array.from(formRef.current.elements).every((element) => {
             return element.type !== 'text' || element.value.trim() !== '';
         });
-    
+
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const isEmailValid = emailRegex.test(formRef.current.user_email.value.trim());
-    
+
         // Check if the message field is not empty
         const isMessageValid = formRef.current.message.value.trim() !== '';
-    
+
         if (isFormValid && isEmailValid && isMessageValid) {
             emailjs.sendForm('service_st4dnhi', 'template_0o4r7xi', formRef.current, 'tF5dCAu1G2nWthYX5')
                 .then((result) => {
@@ -37,7 +37,7 @@ const ContactUs = () => {
             }
         }
     };
-    
+
 
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
@@ -64,7 +64,7 @@ const ContactUs = () => {
                         <div className="font-extrabold text-8xl w-1/2 h-1/4 text-white-300 flex items-center justify-center mt-28 -mb-20 ">Contact Us.</div>
                     </div>
                     <div className='flex items-center justify-center'>
-                        <img className=" w-2/3 bg mt-32 " src={process.env.PUBLIC_URL + '/ye.png'} alt="My" />
+                        <img className=" w-2/3 bg mt-32 " src='/ye.png' alt="My" />
                     </div>
                     <div className='flex my-20'>
                         <div className='mt-20 w-3/5 ml-24  h-[543px]'>
@@ -82,14 +82,14 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div className='mt-12 w-[572px] h-[543px]'>
-                            <img className=" mr-14 mt-20 " src={process.env.PUBLIC_URL + '/nayahe.png'} alt="My" />
+                            <img className=" mr-14 mt-20 " src='/nayahe.png' alt="My" />
                         </div>
                     </div>
 
                     <div className="flex items-center justify-center text-6xl font-bold w-full mt-28">We'd Love To Hear From You!</div>
                     <div className="mt-10 flex">
                         <div className=" mt-20 w-[572px] h-[543px] text-center text-white text-[40px] items-center justify-center">
-                            <img className=" mt-16 ml-32" src={process.env.PUBLIC_URL + '/newcontact2.png'} alt="My" />
+                            <img className=" mt-16 ml-32" src='/newcontact2.png' alt="My" />
                         </div>
                         <div className='box w-[682px] h-[700px] ml-auto mr-44 mb-44 mt-28 border-4 border-cyan-400 rounded-[40px] flex flex-col items-center'>
                             <div className='mt-5 text-4xl mb-3 font-bold underline underline-offset-8 decoration-cyan-400 tracking-wide'>Get In Touch</div>
@@ -134,7 +134,7 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                 
+
                 </div>
                 <div className="w-full flex-col mt-40 pb-40">
                     <div className="flex items-center justify-center text-6xl font-bold w-full mb-12 ">Also find us on </div>

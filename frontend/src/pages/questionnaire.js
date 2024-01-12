@@ -56,7 +56,7 @@ const Questionnaire = () => {
 
                 <div className="flex flex-col gap-3">
                     <div>
-                        <div className=" font-oswald text-xl py-1">{QUESTIONS[0]}</div>
+                        <div className=" font-oswald font-semibold text-xl py-3">{QUESTIONS[0]}</div>
                         <div>
                             <select onChange={(e) => onOptionChange("job", e.target.value)} className=" bg-slate-900 rounded border-white w-full" >
                                 <option value="Student" >Student</option>
@@ -67,7 +67,7 @@ const Questionnaire = () => {
                     </div>
 
                     <div>
-                        <div className=" font-oswald text-xl py-1">{QUESTIONS[1]}</div>
+                        <div className=" font-oswald text-xl font-semibold py-3">{QUESTIONS[1]}</div>
                         <div>
                             <select onChange={(e) => onOptionChange("goal", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
                                 <option value="Academics">Academics</option>
@@ -77,7 +77,7 @@ const Questionnaire = () => {
                     </div>
 
                     <div>
-                        <div className=" font-oswald text-xl py-1">{QUESTIONS[2]}</div>
+                        <div className=" font-oswald text-xl font-semibold py-3">{QUESTIONS[2]}</div>
                         <div>
                             <select onChange={(e) => onOptionChange("sleep", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
                                 <option value="6">6 hours</option>
@@ -88,7 +88,7 @@ const Questionnaire = () => {
                     </div>
 
                     <div>
-                        <div className=" font-oswald text-xl py-1">{QUESTIONS[3]}</div>
+                        <div className=" font-oswald text-xl font-bold py-3">{QUESTIONS[3]}</div>
                         <div>
                             <select onChange={(e) => onOptionChange("sittingHour", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
                                 <option value="2">2 hours</option>

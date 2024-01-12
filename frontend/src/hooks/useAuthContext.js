@@ -7,5 +7,6 @@ export default function useAuthContext() {
     if (!context) {
         throw new Error("AuthContext not found")
     }
+
     return context;
 }

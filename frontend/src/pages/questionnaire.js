@@ -1,12 +1,12 @@
 import { useState } from "react";
 import axios from "axios"
-import AboutUs from "./AboutUs"
 import useAuthContext from "../hooks/useAuthContext";
 import { Navigate } from "react-router-dom";
 
 const Questionnaire = () => {
 
     const { isAuthenticated } = useAuthContext();
+    console.log(isAuthenticated)
 
     const [answers, setAns] = useState({
         job: "Student",
@@ -36,63 +36,73 @@ const Questionnaire = () => {
                 info: answers
             });
             if (response.status === 201) {
-                return (<AboutUs />)
+                return <Navigate to="/aboutus" />
             }
         } catch (err) {
             console.log(err)
         }
     }
 
-    if (!isAuthenticated) {
-        return <Navigate to="/form" />
+    if (isAuthenticated === false) {
+        return <Navigate to="/login" />
     }
 
     return (
         <>
-            <div className=" font-oswald font-bold uppercase">
-                HELLO USER,
-            </div>
-
-            <div>
-                <div>{QUESTIONS[0]}</div>
-                <div>
-                    <select onChange={(e) => onOptionChange("job", e.target.value)}>
-                        <option value="Student">Student</option>
-                        <option value="Teacher">Teacher</option>
-                        <option value="Driver">Driver</option>
-                    </select>
+            <div className="flex flex-col gap-3 p-3 m-4 ">
+                <div className=" font-oswald font-bold text-[50px] uppercase">
+                    HELLO ASPIRANT,
                 </div>
 
-                <div>{QUESTIONS[1]}</div>
-                <div>
-                    <select onChange={(e) => onOptionChange("goal", e.target.value)}>
-                        <option value="Academics">Academics</option>
-                        <option value="Self Improvement">Self Improvement</option>
-                    </select>
+                <div className="flex flex-col gap-3">
+                    <div>
+                        <div className=" font-oswald text-xl py-1">{QUESTIONS[0]}</div>
+                        <div>
+                            <select onChange={(e) => onOptionChange("job", e.target.value)} className=" bg-slate-900 rounded border-white w-full" >
+                                <option value="Student" >Student</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Driver">Driver</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className=" font-oswald text-xl py-1">{QUESTIONS[1]}</div>
+                        <div>
+                            <select onChange={(e) => onOptionChange("goal", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
+                                <option value="Academics">Academics</option>
+                                <option value="Self Improvement">Self Improvement</option>
+                            </select>
+                        </div >
+                    </div>
+
+                    <div>
+                        <div className=" font-oswald text-xl py-1">{QUESTIONS[2]}</div>
+                        <div>
+                            <select onChange={(e) => onOptionChange("sleep", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
+                                <option value="6">6 hours</option>
+                                <option value="8">8 hours</option>
+                                <option value="10">10 hours</option>
+                            </select>
+                        </div >
+                    </div>
+
+                    <div>
+                        <div className=" font-oswald text-xl py-1">{QUESTIONS[3]}</div>
+                        <div>
+                            <select onChange={(e) => onOptionChange("sittingHour", e.target.value)} className=" bg-slate-900 rounded border-white w-full">
+                                <option value="2">2 hours</option>
+                                <option value="3">3 hours</option>
+                                <option value="1">1 hour</option>
+                                <option value="0.5">half an hour</option>
+                                <option value="1.5">1 and a half hour</option>
+                            </select>
+                        </div >
+                    </div>
                 </div >
 
-                <div>{QUESTIONS[2]}</div>
-                <div>
-                    <select onChange={(e) => onOptionChange("sleep", e.target.value)}>
-                        <option value="6">6 hours</option>
-                        <option value="8">8 hours</option>
-                        <option value="10">10 hours</option>
-                    </select>
-                </div >
-
-                <div>{QUESTIONS[3]}</div>
-                <div>
-                    <select onChange={(e) => onOptionChange("sittingHour", e.target.value)}>
-                        <option value="2">2 hours</option>
-                        <option value="3">3 hours</option>
-                        <option value="1">1 hour</option>
-                        <option value="0.5">half an hour</option>
-                        <option value="1.5">1 and a half hour</option>
-                    </select>
-                </div >
-            </div >
-
-            <div onClick={infoSubmit}>SUBMIT</div>
+                <div onClick={infoSubmit} className=" bg-cyan-200 w-min px-3 py-2 rounded-xl text-slate-900 my-3 self-center font-bold font-oswald text-xl">SUBMIT</div>
+            </div>
         </>
     )
 }

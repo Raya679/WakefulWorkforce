@@ -1,7 +1,6 @@
 import { useState } from "react"
 import axios from 'axios';
-import Questionnaire from "./questionnaire"
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import useAuthContext from "../hooks/useAuthContext";
 
 
@@ -11,6 +10,7 @@ export default function Simple({ login }) {
 
     const [email, setEmail] = useState("");
     const [password, setPass] = useState("")
+    const [error, setError] = useState([""])
 
     async function formSubmit(e) {
         e.preventDefault();
@@ -21,17 +21,24 @@ export default function Simple({ login }) {
                 email: email,
                 password: password,
             });
-
-            console.log(response.data.user);
-            setAuthenticated(true)
+            console.log(response.data)
+            if (!response.data.user) {
+                console.log(response.data.errors)
+                setError(response.data.error)
+                setAuthenticated(false)
+            }
+            else {
+                console.log(response.data.user);
+                setAuthenticated(true)
+            }
 
         } catch (err) {
-            console.log(err);
+            setError([err.response.data.error]);
         }
     }
 
     if (isAuthenticated) {
-        return (<Questionnaire />)
+        return <Navigate to="/questionnaire" />
     }
 
 
@@ -65,6 +72,7 @@ export default function Simple({ login }) {
                         <button className=" cursor-pointer self-center bg-cyan-400 text-[#282c34] font-fedroka font-semibold rounded-2xl px-4 py-1" type="submit">Submit</button>
                     </form>
                 </div>
+                <div className="text-red">{error.map((err) => err)}</div>
                 <div className=" text-gray-500">
                     {login ?
                         (

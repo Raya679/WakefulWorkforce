@@ -9,7 +9,7 @@ export default function Navbar() {
         <button className='flex-grow'></button>
         <Link to="/" className='mx-8 text-2xl hover:text-cyan-400 hover:text-3xl'>HOME</Link>
         <Link to="/aboutus" className='mx-8 text-2xl hover:text-cyan-400 hover:text-3xl '>ABOUT US</Link>
-        <button type="button" className='mx-8 text-2xl hover:text-cyan-400 hover:text-3xl'>CONTACT US</button>
+        <Link to="/contactus" className='mx-8 text-2xl hover:text-cyan-400 hover:text-3xl'>CONTACT US</Link>
         {localStorage.getItem("jwt") ?
           <Link to="/form" className='mx-4 text-1xl hover:bg-indigo-900 p-1 font-extrabold border-4 border-cyan-400 rounded-[10px] px-4 py-2 text-2xl '>LOGOUT</Link>
           :

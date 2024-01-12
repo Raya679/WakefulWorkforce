@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
+import ContactUs from './components/ContactUs';
 import Signup from "./pages/signup"
 import { Route, Routes } from "react-router-dom"
 import PrivateRoute from "./Routes/AuthPrivateRoutes"
@@ -18,6 +19,7 @@ function App() {
         <Route path="/form" element={<Signup />} />
         {/* <Route path="/aboutus" element={<PrivateRoute element={<AboutUs />} />} /> */}
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
     </div>
 

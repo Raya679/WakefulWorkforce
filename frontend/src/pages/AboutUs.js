@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from 'react';
 // import Footer from './components/Footer';
 const AboutUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return ( 
         <>
         <div className="h-full w-full bg-slate-900 overflow-x-hidden ">

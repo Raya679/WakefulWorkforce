@@ -44,21 +44,21 @@ export default function Simple({ login }) {
 
     return (
         <div className=" flex items-center justify-center text-white h-full">
-            <div className="flex py-3 px-5 rounded-xl gap-3 border-cyan-400 border-1 flex-col h-2/3 w-1/4 mt-40">
+            <div className="flex py-3 px-5 rounded-xl gap-3 border-cyan-400 border-3 flex-col h-2/3 w-1/4 mt-40">
                 <div className=" text-3xl font-bold my-3 flex items-center justify-center">
                     {login ? "LOGIN" : "SIGN UP"}
                 </div>
-                <button className="text-1xl font-bold cursor-pointer border-3 border-cyan-400 rounded-3xl py-2 px-3 hover:bg-cyan-400 hover:text-slate-900 ">Continue with Google</button>
+                <button className="text-1xl font-bold cursor-pointer border-1 border-cyan-400 rounded-3xl py-2 px-3 hover:bg-cyan-400 hover:text-slate-900 ">Continue with Google</button>
                 <div className=" text-gray-400 text-center">{login ? "----or login in with email----" : "----or sign in with email----"}</div>
                 <div className=" self-start ml-14">
                     <form onSubmit={formSubmit} className=" flex gap-4 flex-col py-2 items-start">
                         <div className="flex flex-col gap-2 w-full ">
                             <label htmlFor="email" className="font-bold">Email : </label>
-                            <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className=" form-input text-white rounded-3xl bg-slate-900 border-cyan-400 border-2" required />
+                            <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className=" form-input text-white rounded-3xl bg-slate-900 border-cyan-400 border-3" required />
                         </div>
                         <div className="flex flex-col gap-2 w-full">
                             <label htmlFor="pass" className="font-bold">Password : </label>
-                            <input type="text" value={password} onChange={(e) => { setPass(e.target.value) }} className=" form-input text-white rounded-3xl bg-slate-900 border-cyan-400 border-2" required />
+                            <input type="text" value={password} onChange={(e) => { setPass(e.target.value) }} className=" form-input text-white rounded-3xl bg-slate-900 border-cyan-400 border-3" required />
                         </div>
 
                         <div className="flex content-between gap-5 py-2">

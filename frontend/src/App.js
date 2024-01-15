@@ -7,6 +7,7 @@ import Signup from "./pages/signup"
 import { Route, Routes } from "react-router-dom"
 import AboutUs from './pages/AboutUs';
 import Questionnaire from './pages/questionnaire';
+import Dashboard from './pages/dashboard';
 function App() {
 
 
@@ -17,7 +18,7 @@ function App() {
       <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path='/login' element={<Signup login={true} />} />
           <Route path='/signup' element={<Signup login={false} />} />
           <Route path="/aboutus" element={<AboutUs />} />

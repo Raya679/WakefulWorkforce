@@ -1,12 +1,11 @@
 import { useState } from "react";
 import axios from "axios"
-import useAuthContext from "../hooks/useAuthContext";
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router";
+
 
 const Questionnaire = () => {
 
-    const { isAuthenticated } = useAuthContext();
-    console.log(isAuthenticated)
+    const [submit, isSubmit] = useState(false);
 
     const [answers, setAns] = useState({
         job: "Student",
@@ -36,15 +35,15 @@ const Questionnaire = () => {
                 info: answers
             });
             if (response.status === 201) {
-                return <Navigate to="/aboutus" />
+                isSubmit(true)
             }
         } catch (err) {
             console.log(err)
         }
     }
 
-    if (isAuthenticated === false) {
-        return <Navigate to="/login" />
+    if (submit) {
+        return (<Navigate to="/dashboard" />)
     }
 
     return (
@@ -101,7 +100,7 @@ const Questionnaire = () => {
                     </div>
                 </div >
 
-                <div onClick={infoSubmit} className=" bg-cyan-200 w-min px-3 py-2 rounded-xl text-slate-900 my-3 self-center font-bold font-oswald text-xl">SUBMIT</div>
+                <div onClick={infoSubmit} className=" cursor-pointer bg-cyan-200 w-min px-3 py-2 rounded-xl text-slate-900 my-3 self-center font-bold font-oswald text-xl">SUBMIT</div>
             </div>
         </>
     )

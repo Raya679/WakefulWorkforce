@@ -37,10 +37,13 @@ export default function Simple({ login }) {
         }
     }
 
-    if (isAuthenticated) {
+    if (isAuthenticated && !login) {
         return <Navigate to="/questionnaire" />
     }
 
+    if (isAuthenticated && login) {
+        return <Navigate to="/dashboard" />
+    }
 
     return (
         <div className=" flex items-center justify-center text-white h-screen">

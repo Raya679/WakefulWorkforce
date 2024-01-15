@@ -14,16 +14,17 @@ function App() {
 
   return (
 
-    <div className="bg-slate-900 text-white min-h-screen ">
+    <div className="bg-slate-900 text-white min-h-screen  ">
       <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Homepage />} />
           <Route path='/login' element={<Signup login={true} />} />
           <Route path='/signup' element={<Signup login={false} />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/questionnaire" element={<Questionnaire />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </AuthContextProvider>
     </div >

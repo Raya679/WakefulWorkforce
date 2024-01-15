@@ -14,24 +14,29 @@ const AboutUs = () => {
                     <div className="font-extrabold text-8xl w-1/2 h-1/4 text-white-300 flex items-center justify-center mt-32 ">About Us.</div>
                 </div>
                 <div className="w-screen h-1/2 flex items-center justify-center bg-slate-900">
-                    <img className="" src="./—Pngtree—office people discuss about business_7260139.png" alt="sorry" />
+                    <img className="h-2/3 w-2/3" src="./—Pngtree—office people discuss about business_7260139.png" alt="sorry" />
                 </div>
                 <div className="w-screen h-3/4 flex bg-slate-900 ">
-                    <div className="w-2/5 mr-56 ml-24 text-2xl mt-32">
-                        <div className="font-extrabold text-6xl mb-20 text-white"><h2>Our Mission</h2></div>
-                        <p>Mi sit amet mauris commodo quis. Diam maecenas ultricies mi eget mauris pharetra. Donec enim diam vulputate ut pharetra. Vestibulum lectus mauris ultrices eros in. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Viverra nam libero justo laoreet sit. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Massa massa ultricies mi quis hendrerit dolor magna eget est. Integer eget aliquet nibh praesent tristique magna sit amet. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Integer enim neque volutpat ac tincidunt. Libero nunc consequat interdum varius sit amet. Morbi quis commodo odio aenean sed adipiscing diam. Urna neque viverra justo nec ultrices dui sapien eget mi.s</p>
+                    <div className="w-2/5 mr-32 ml-24 text-3xl mt-32">
+                        <div className="font-extrabold text-6xl mb-12 text-white"><h2>Our Mission</h2></div>
+                        <div className="text-4xl text-cyan-300 font-bold mt-5 mb-2"><p>Academic Performance and overall Productivity Improvement: </p></div>
+                        <p>A well-designed website which helps students to manage their time and combat drowsiness, leading to improved academic performance.</p>
+                            <div className="text-4xl text-cyan-300 font-bold mt-5 mb-2"><p>Health and Wellbeing: </p></div>
+                            <p>A website which helps to contribute to students' overall health and well-being. Reduced stress and improved sleep patterns can lead to better mental and physical health.</p>
+                        <div className="text-4xl text-cyan-300 font-bold mt-5 mb-2"><p>Drowsiness Detection: </p></div>
+                        <p>This is the main feature of the website. The drowsiness detection technology being accurate and effective, can potentially be used in other places as well, such as to save lives by preventing accidents caused by drowsy driving or other hazardous situations.</p>
                     </div>
-                    <div className="">
-                        <img src="./goal.png" alt="" />
+                    <div className="w-2/3 h-2/3 mt-12">
+                        <img src="./—Pngtree—entrepreneurs plan tasks and business_7259414.png" alt="" />
                     </div>
                 </div>
                 <div className="w-screen h-3/4 flex bg-slate-900 mt-24 mb-40">
-                    <div className="">
-                        <img src="./about4.png" alt="" />
+                    <div className="w-2/3 h-2/3">
+                        <img src="./—Pngtree—discussion groups with different opinions_7257934.png" alt="" />
                     </div>
-                    <div className="w-2/5 mr-24 ml-56 text-2xl mt-32">
+                    <div className="w-2/5 mr-24 ml-24 text-3xl mt-48">
                         <div className="font-extrabold text-6xl mb-20 text-white"><h2>Our Story</h2></div>
-                        <p>In today's times, social media has a profound effect on various age groups. Among them the prominent ones are students. They get distracted and trapped by this illusion. Not only does it deteriorate their perfoemance but also causes various mental health issues. 4 students from SY Btech VJTI (Computer Science) have successfully developed a solution to this problem.  </p>
+                        <p>Meeting deadlines is crucial for students as well as working  professionals, but sometimes we may push ourselves too hard to complete the work on time and end up pulling all-nighters. The lack of sleep can lead to drowsiness, which can affect our productivity and focus. 4 students from SY Btech VJTI successfully developed a modern day solution to this problem. Advait, Raya, Richa and Anushka of the CS department along with their mentors Kedar and Dhruv under COC's Inheritance program brought "WAKEFUL WORKFORCE" into a reality.</p>
                     </div>
                 </div>
                 <div className="w-full h-2/5 bg-slate-900 flex-col">

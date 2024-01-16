@@ -4,15 +4,15 @@ import numpy as np
 from pygame import mixer
 
 mixer.init()
-sound = mixer.Sound('alarm.wav')
+sound = mixer.Sound('WakefulWorkforce/alarm.wav')
 
-face = cv2.CascadeClassifier('Resources\haarcascade_frontalface_alt.xml')
-leye = cv2.CascadeClassifier('Resources\haarcascade_lefteye_2splits.xml')
-reye = cv2.CascadeClassifier('Resources\haarcascade_righteye_2splits.xml')
+face = cv2.CascadeClassifier('WakefulWorkforce\Resources\haarcascade_frontalface_alt.xml')
+leye = cv2.CascadeClassifier('WakefulWorkforce\Resources\haarcascade_lefteye_2splits.xml')
+reye = cv2.CascadeClassifier('WakefulWorkforce\Resources\haarcascade_righteye_2splits.xml')
 
 lbl = ['Close', 'Open']
 
-model = load_model('models/DrowsinessDetection.h5')
+model = load_model('WakefulWorkforce\models\DrowsinessDetection.h5')
 
 # path = os.getcwd()
 cap = cv2.VideoCapture(0)

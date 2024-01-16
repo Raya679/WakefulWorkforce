@@ -54,7 +54,7 @@ export default function Simple({ login }) {
                 <button className="text-1xl font-bold cursor-pointer border-1 border-cyan-400 rounded-3xl py-2 px-3 hover:bg-cyan-400 hover:text-slate-900 ">Continue with Google</button>
                 <div className=" text-gray-400 text-center">{login ? "----or login in with email----" : "----or sign in with email----"}</div>
                 <div className=" self-start ml-14">
-                    <form onSubmit={formSubmit} className=" flex gap-4 flex-col py-2 items-start">
+                    <form onSubmit={formSubmit} className=" flex gap-4 flex-col ">
                         <div className="flex flex-col gap-2 w-full ">
                             <label htmlFor="email" className="font-bold">Email : </label>
                             <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} className=" form-input text-white rounded-3xl bg-slate-900 border-cyan-400 border-3" required />

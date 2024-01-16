@@ -34,7 +34,7 @@ const AboutUs = () => {
                     <div className="w-2/3 h-2/3">
                         <img src="./—Pngtree—discussion groups with different opinions_7257934.png" alt="" />
                     </div>
-                    <div className="w-2/5 mr-24 ml-24 text-3xl mt-48">
+                    <div className="w-2/5 mr-24 ml-24 text-3xl mt-60">
                         <div className="font-extrabold text-6xl mb-20 text-white"><h2>Our Story</h2></div>
                         <p>Meeting deadlines is crucial for students as well as working  professionals, but sometimes we may push ourselves too hard to complete the work on time and end up pulling all-nighters. The lack of sleep can lead to drowsiness, which can affect our productivity and focus. 4 students from SY Btech VJTI successfully developed a modern day solution to this problem. Advait, Raya, Richa and Anushka of the CS department along with their mentors Kedar and Dhruv under COC's Inheritance program brought "WAKEFUL WORKFORCE" into a reality.</p>
                     </div>
@@ -42,28 +42,28 @@ const AboutUs = () => {
                 <div className="w-full h-2/5 bg-slate-900 flex-col">
                     <div className="flex items-center justify-center text-6xl font-bold w-full mb-12">Meet Our Team</div>
                     <div className="flex items-center justify-center w-full">
-                        <a href="https://www.linkedin.com/in/advait-yadav-231154271/" className="w-60 h-1/2 rounded-lg border-1 border-white mx-20 my-24 hover:bg-cyan-400 hover:text-slate-900 ">
+                        <a href="https://www.linkedin.com/in/advait-yadav-231154271/" className="w-80 h-1/2 rounded-lg border-1 border-white mx-14 my-24 hover:bg-cyan-400 hover:text-slate-900 hover:border-none">
                             <div className="flex items-center justify-center my-5">
                                 <img className="" src="./Mask group (2).png" alt="" />
                             </div>
                             <div className="text-center my-3 font-bold text-2xl">Advait Yadav</div>
                             <div className="p-3 text-1xl text-center"><p>Cursus sit amet dictum sit amet justo. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.</p></div>
                         </a>
-                        <a href="https://www.linkedin.com/in/raya-chakravarty/" className="w-60 h-1/2 rounded-lg border-1 border-white mx-20 my-24 hover:bg-cyan-400 hover:text-slate-900">
+                        <a href="https://www.linkedin.com/in/raya-chakravarty/" className="w-80 h-1/2 rounded-lg border-1 border-white mx-14 my-24 hover:bg-cyan-400 hover:text-slate-900 hover:border-none">
                             <div className="flex items-center justify-center my-5">
                                 <img className="" src="./Mask group.png" alt="" />
                             </div>
                             <div className="text-center my-3 font-bold text-2xl">Raya Chakravarty</div>
                             <div className="p-3 text-1xl text-center"><p>Cursus sit amet dictum sit amet justo. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.</p></div>
                         </a>
-                        <a href="https://www.linkedin.com/in/richasawant20/" className="w-60 h-1/2 rounded-lg border-1 border-white mx-20 my-24 hover:bg-cyan-400 hover:text-slate-900">
+                        <a href="https://www.linkedin.com/in/richasawant20/" className="w-80 h-1/2 rounded-lg border-1 border-white mx-14 my-24 hover:bg-cyan-400 hover:text-slate-900 hover:border-none">
                             <div className="flex items-center justify-center my-5">
                                 <img className="" src="./Mask group3.png" alt="" />
                             </div>
                             <div className="text-center my-3 font-bold text-2xl">Richa Sawant</div>
                             <div className="p-3 text-1xl text-center"><p>Cursus sit amet dictum sit amet justo. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.</p></div>
                         </a>
-                        <a href="https://www.linkedin.com/in/anushka-yadav-356b20276/" className="w-60 h-1/2 rounded-lg border-1 border-white mx-20 my-24 hover:bg-cyan-400 hover:text-slate-900">
+                        <a href="https://www.linkedin.com/in/anushka-yadav-356b20276/" className="w-80 h-1/2 rounded-lg border-1 border-white mx-14 my-24 hover:bg-cyan-400 hover:text-slate-900 hover:border-none">
                             <div className="flex items-center justify-center my-5">
                                 <img className="" src="./Mask group (1).png" alt="" />
                             </div>

@@ -1,6 +1,13 @@
+
 const Session = () => {
     return ( 
-        <h1>session page</h1>
+        fetch('',{
+            method:"GET"
+        }).then(()=>{
+            
+        })
+
+        
      );
 }
  

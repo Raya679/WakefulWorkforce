@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom"
 import AboutUs from './pages/AboutUs';
 import Questionnaire from './pages/questionnaire';
 import Dashboard from './pages/dashboard';
+import Session from './pages/session';
 function App() {
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/questionnaire" element={<Questionnaire />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/session" element={<Session />} />
         </Routes>
       </AuthContextProvider>
     </div >

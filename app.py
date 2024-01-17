@@ -4,8 +4,10 @@ import numpy as np
 from pygame import mixer
 
 from flask import Flask, render_template, Response
+from flask_cors import CORS
 import cv2
 app = Flask(__name__)
+CORS(app)
 camera = cv2.VideoCapture(0)
 
 

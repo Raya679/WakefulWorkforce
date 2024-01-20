@@ -33,7 +33,8 @@ export default function Simple({ login }) {
             }
 
         } catch (err) {
-            setError([err.response.data.error]);
+            // setError([err.response.data.error]);
+            console.log(err)
         }
     }
 

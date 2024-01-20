@@ -1,10 +1,20 @@
 import React, { useEffect } from 'react';
 import Footer from './Footer';
+import useAuthContext from '../hooks/useAuthContext';
+import { Navigate } from 'react-router-dom';
 
 export default function Homepage() {
+
+    const { isAuthenticated } = useAuthContext()
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    if (isAuthenticated) {
+        return <Navigate to="/dashboard" />
+    }
+
     return (
         <>
             <div className="flex">

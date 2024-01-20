@@ -19,7 +19,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='sticky top-0'>
+    <nav className='sticky z-10 w-full top-0'>
       <div className='flex items-center px-2 py-2 font-bold bg-slate-900 text-white'>
         <button className='name mx-5  text-4xl '>WAKEFUL WORKFORCE</button>
         <button className='flex-grow'></button>

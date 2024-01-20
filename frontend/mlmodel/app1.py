@@ -8,7 +8,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)
 
-@app.route('/upload', methods=['POST'])
+
+# MODEL IS ABLE TO RUN ON FLASK ALONE
+@app.route('/', methods=['GET'])
 def upload_image():
     try:
         camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Footer from './Footer';
+import { Link } from "react-router-dom"
 import useAuthContext from '../hooks/useAuthContext';
 import { Navigate } from 'react-router-dom';
 
@@ -26,9 +27,12 @@ export default function Homepage() {
                     <div className="w-[850px] h-[370px] text-right text-white text-8xl font-semibold font-['Fredoka One'] p-6 py-6" style={{ lineHeight: '1.5' }}>
                         <b>WAKEFUL <br />WORKFORCE</b>
                     </div>
-                    <button type="button" className="w-[449px] h-[79px] bg-cyan-400 rounded-[50px] py-6 text-slate-950 text-[40px] font-bold font-['Fredoka One'] font-extrabold  flex items-center justify-center hover:text-cyan-400 ml-96  hover:bg-slate-900 hover:border-2 hover:border-cyan-400">
-                        START A SESSION
-                    </button>
+                    <Link to="/session">
+                        <button type="button" className="w-[449px] h-[79px] bg-cyan-400 rounded-[50px] py-6 text-slate-950 text-[40px] font-bold font-['Fredoka One'] font-extrabold  flex items-center justify-center hover:text-cyan-400 ml-96  hover:bg-slate-900 hover:border-2 hover:border-cyan-400">
+                            START A SESSION
+                        </button>
+                    </Link>
+
 
                 </div>
             </div>

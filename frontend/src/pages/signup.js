@@ -17,7 +17,7 @@ export default function Simple({ login }) {
         console.log(email, password)
 
         try {
-            const response = await axios.post(login ? '/api/login' : '/api/signup', {
+            const response = await axios.post(login ? `${process.env.REACT_APP_EXPRESS_URL}/api/login` : `${process.env.REACT_APP_EXPRESS_URL}/api/signup`, {
                 email: email,
                 password: password,
             });

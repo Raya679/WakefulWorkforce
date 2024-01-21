@@ -29,7 +29,7 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/questionnaire" element={<Questionnaire />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/session" element={<Session />} />
+            {/* <Route path="http://127.0.0.1:5000/" element={<Session />} /> */}
             <Route path="/todo" element={<Todo />} />
             <Route path="/calendar" element={<CalendarPage />} />
           </Routes>

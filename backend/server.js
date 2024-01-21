@@ -6,6 +6,7 @@ require("dotenv").config()
 
 const authRoutes = require("./Routes/AuthRoutes")
 const todoRoutes = require("./Routes/TodoRoutes")
+const questionnaireRoutes = require("./Routes/QuestionnaireRoutes");
 
 const app = express()
 
@@ -28,5 +29,6 @@ mongoose.connect(dbURI)
     })
     .catch((err) => console.log(err));
 
-app.use(authRoutes)
-app.use(todoRoutes)
+app.use(authRoutes);
+app.use(todoRoutes);
+app.use("/", questionnaireRoutes);

@@ -8,15 +8,13 @@ from flask_cors import CORS
 import cv2
 app = Flask(__name__)
 CORS(app)
-camera = cv2.VideoCapture(0)
+
 
 
 def gen_frames():
-    i=1
-    print('Hello')
+  
+    camera = cv2.VideoCapture(0)
     while True:
-        print('inside',i)
-        i+=1
         success, frame = camera.read()  # read the camera frame
         if not success:
             break

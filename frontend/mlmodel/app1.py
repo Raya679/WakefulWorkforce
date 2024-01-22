@@ -1,4 +1,4 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 import cv2
 from keras.models import load_model
 import numpy as np
@@ -7,7 +7,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 cors = CORS(app)
-
 
 # MODEL IS ABLE TO RUN ON FLASK ALONE
 @app.route('/', methods=['GET'])
@@ -108,6 +107,9 @@ def upload_image():
 
     except Exception as e:
         return {'error': str(e)}, 500
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

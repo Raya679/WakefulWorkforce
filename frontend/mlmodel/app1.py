@@ -9,6 +9,8 @@ app = Flask(__name__)
 cors = CORS(app)
 
 # MODEL IS ABLE TO RUN ON FLASK ALONE
+
+
 @app.route('/', methods=['GET'])
 def upload_image():
     try:
@@ -34,6 +36,9 @@ def upload_image():
             lpred = [99] 
             
             while True:
+                # dynamic_html='<h1>Hi, this is me..</h1>'
+                # yield (f'--frame\r\n'
+                #        f'Content-Type: text/html\r\n\r\n{dynamic_html}\r\n').encode('utf-8')
                 success, frame = camera.read()  # read the camera frame
                 if not success:
                     break
@@ -104,7 +109,7 @@ def upload_image():
                        b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
         return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
+    
     except Exception as e:
         return {'error': str(e)}, 500
 
@@ -112,7 +117,7 @@ def upload_image():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=0)
+    app.run(debug=True, host='127.0.0.1', port=5500)
 
 
 

@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom"
 import AboutUs from './pages/AboutUs';
 import Questionnaire from './pages/questionnaire';
 import Dashboard from './pages/dashboard';
-// import Session from './pages/session';
+import Session from './pages/session';
 import CalendarPage from "./pages/CalendarPage";
 import DateContextProvider from "./Context/DateContext";
 
@@ -29,7 +29,8 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
             <Route path="/questionnaire" element={<Questionnaire />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            {/* <Route path="http://127.0.0.1:5000/" element={<Session />} /> */}
+            <Route path="http://127.0.0.1:5500/" element={<Session />} />
+            {/* <Route path="/session" element={<Session />} /> */}
             <Route path="/todo" element={<Todo />} />
             <Route path="/calendar" element={<CalendarPage />} />
           </Routes>

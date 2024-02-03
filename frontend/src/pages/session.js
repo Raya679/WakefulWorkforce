@@ -1,55 +1,141 @@
-// import React, { useRef, useEffect } from 'react';
-// import axios from 'axios';
+// import React, { useEffect } from 'react';
+// import { Pyscript } from 'pyscript-react';
 
 // const Session = () => {
-//   // const videoRef = useRef();
+//   const modelCode=
+//   `import cv2
+//   from keras.models import load_model
+//   import numpy as np
+//   from pygame import mixer      
+          
+//   camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)   
+//   mixer.init()
+//   sound = mixer.Sound('WakefulWorkforce/frontend/mlmodel/alarm.wav')
+
+//   face = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_frontalface_alt.xml')
+//   leye = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_lefteye_2splits.xml')
+//   reye = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_righteye_2splits.xml')
+
+//   lbl = ['Close', 'Open']
+
+//   model = load_model('WakefulWorkforce/frontend/mlmodel/models/DrowsinessDetection.h5')
+//   font = cv2.FONT_HERSHEY_COMPLEX_SMALL
+//   count = 0
+//   score = 0
+
+//   rpred = [99]
+//   lpred = [99] 
+
+//   while True:
+//       success, frame = camera.read()  # read the camera frame
+//       if not success:
+//           break
+
+//       height, width = frame.shape[:2]
+
+//       gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+//       faces = face.detectMultiScale(gray, minNeighbors=5, scaleFactor=1.1, minSize=(25, 25))
+//       left_eye = leye.detectMultiScale(gray)
+//       right_eye = reye.detectMultiScale(gray)
+
+//       cv2.rectangle(frame, (0, height-50), (200, height), (0, 0, 0), thickness=cv2.FILLED)
+
+//       for (x, y, w, h) in faces:
+//           cv2.rectangle(frame, (x, y), (x+w, y+h), (100, 100, 100), 1)
+
+//       for (x, y, w, h) in right_eye:
+//           r_eye = frame[y:y+h, x:x+w]
+//           count = count+1
+//           r_eye = cv2.cvtColor(r_eye, cv2.COLOR_BGR2GRAY)
+//           r_eye = cv2.resize(r_eye, (24, 24))
+//           r_eye = r_eye/255
+//           r_eye = r_eye.reshape(24, 24, -1)
+//           r_eye = np.expand_dims(r_eye, axis=0)
+//           rpred = np.argmax(model.predict(r_eye), axis=-1)
+//           if (rpred[0] == 1):
+//               lbl = 'Open'
+//           if (rpred[0] == 0):
+//               lbl = 'Closed'
+//           break
+
+//       for (x, y, w, h) in left_eye:
+//           l_eye = frame[y:y+h, x:x+w]
+//           count = count+1
+//           l_eye = cv2.cvtColor(l_eye, cv2.COLOR_BGR2GRAY)
+//           l_eye = cv2.resize(l_eye, (24, 24))
+//           l_eye = l_eye/255
+//           l_eye = l_eye.reshape(24, 24, -1)
+//           l_eye = np.expand_dims(l_eye, axis=0)
+//           lpred = np.argmax(model.predict(l_eye), axis=-1)
+//           if (lpred[0] == 1):
+//               lbl = 'Open'
+//           if (lpred[0] == 0):
+//               lbl = 'Closed'
+//           break
+
+//       if (rpred[0] == 0 and lpred[0] == 0):
+//           score = score+1
+//           cv2.putText(frame, "Closed", (10, height-20), font, 1, (0, 0, 255), 1, cv2.LINE_AA)
+//       else:
+//           score = score-1
+//           cv2.putText(frame, "Open", (10, height-20), font, 1, (0, 255, 0), 1, cv2.LINE_AA)
+
+//       if (score < 0):
+//           score = 0
+
+//       cv2.putText(frame, 'Score:'+str(score), (100, height-20), font, 1, (255, 255, 255), 1, cv2.LINE_AA)
+//       faces = face.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+//       if (score > 15 or len(faces) <= 0):
+//           sound.play()
+//           cv2.rectangle(frame, (0, 0), (width, height), (0, 0, 255))
+          
+//       cv2.imshow("Drowsiness Detection", frame)
+
+//       if cv2.waitKey(1) & 0xFF == ord('q'):
+//           break
+      
+//   camera.release()
+
+  
+//   cv2.destroyAllWindows()`;
 
 //   useEffect(() => {
-//     const captureAndSend = async () => {
-// //       // const video = videoRef.current;
-
-// //       // if (video) {
-// //       //   const canvas = document.createElement('canvas');
-// //       //   const context = canvas.getContext('2d');
-
-// //         // Set canvas dimensions to match video
-// //         canvas.width = video.videoWidth;
-// //         canvas.height = video.videoHeight;
-
-// //         // Draw video frame on canvas
-// //         context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-// //         // Convert canvas content to base64
-// //         const imageBase64 = canvas.toDataURL('image/jpeg');
-
-// //         // Send image to the Flask server
-//         try {
-//           await axios.get('http://127.0.0.1:5000/');
-//         //   console.log('Image sent successfully');
-//         } catch (error) {
-//           console.error('Failed to send image', error);
-//         }
+//     const runDrowsinessDetection = async () => {
+//       try {
+//         // Initialize Pyscript
+//         await Pyscript.initialize();
+  
+//         // Load and execute the Python code
+//         await Pyscript.loadCode(modelCode);
+//         await Pyscript.runCode();
+  
+//       } catch (error) {
+//         console.error('Error during Python script execution:', error);
+//       } finally {
+//         // Unload the Python code and clean up
+//         await Pyscript.unloadCode(modelCode);
+//         await Pyscript.terminate();
 //       }
-//     });
+//     };
+//     runDrowsinessDetection();
 
-// //     const initWebcam = async () => {
-// //       const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+//   // Clean up when the component unmounts
+//   return () => {
+//     Pyscript.terminate();
+//   };
+// }, [modelCode]);
 
-// //       if (videoRef.current) {
-// //         videoRef.current.srcObject = stream;
-// //       }
-// //     };
-
-// //     initWebcam();
-
-// //     const intervalId = setInterval(captureAndSend, 1000); // Adjust the interval as needed
-
-// //     return () => {
-// //       clearInterval(intervalId);
-// //     };
-// //   }, []);
-
-// //   return <video ref={videoRef} autoPlay />;
+//   return (
+//     <div>
+//       <div className="container">
+//         {/* Display your UI components as needed */}
+//       </div>
+//     </div>
+//   );
 // };
 
+
+ 
 // export default Session;

@@ -20,7 +20,8 @@ export default function Simple({ login }) {
             const response = await axios.post(login ? `${process.env.REACT_APP_EXPRESS_URL}/api/login` : `${process.env.REACT_APP_EXPRESS_URL}/api/signup`, {
                 email: email,
                 password: password,
-            });
+
+            }, { withCredentials: true });
             console.log(response.data)
             if (!response.data.user) {
                 console.log(response.data.errors)

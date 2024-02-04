@@ -21,6 +21,22 @@
             border-radius: 10px;
             padding: 10px;
         }
+        .text a button{
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(34 211 238);
+            color: rgb(15 23 42);
+            margin-top: 30px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: larger;
+            margin-bottom: 30px;
+        }
+        .text a button:hover{
+            border: 2px solid rgb(34 211 238) ;
+            background-color:rgb(15 23 42) ;
+            color: rgb(34 211 238);
+        }
     </style>
 </head>
 
@@ -28,8 +44,9 @@
     <div class="container">
         <div class="row">
             <div class="text">
-                <h1><b>SESSION STARTED</b></h1>
+                <h1><b>SESSION ONGOING</b></h1>
                 <img id="bg" src="{{ url_for('video_feed') }}" >
+                <a href="/analysis"><button><b>STOP SESSION</b></button></a>
             </div>
         </div>
     </div>

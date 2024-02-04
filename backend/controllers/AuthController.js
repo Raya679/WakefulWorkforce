@@ -9,8 +9,7 @@ module.exports.signup = async (req, res) => {
         const user = await User.create({ email, password })
         const token = createToken(user.id);
         res.cookie('jwt', token, { httpOnly: true, maxAge: process.env.JWT_EXPIRE * "1000" });
-
-        res.status(201).json({ user: user._id })
+        res.status(201).json({ user: user.id })
     } catch (err) {
         console.log(err)
         res.status(400).send("Bad request")
@@ -34,10 +33,8 @@ module.exports.login_post = async (req, res) => {
 
             if (auth) {
                 const token = createToken(user.id);
-
-                res.cookie('jwt', token, { httpOnly: true, maxAge: process.env.JWT_EXPIRE * 1000 });
-
-                res.status(201).json({ user: user._id });
+                res.cookie('jwt', token, { httpOnly: true, maxAge: process.env.JWT_EXPIRE * "1000" });
+                res.status(201).json({ user: user.id });
             } else {
 
                 console.log("Invalid password");

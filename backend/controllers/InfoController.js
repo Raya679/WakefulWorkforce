@@ -8,6 +8,7 @@ module.exports.info = async (req, res) => {
     try {
         const iD = new ObjectId(jwt.decode(req.cookies.jwt))
         const user = await User.findById(iD)
+        console.log(user)
         const status = await user.updateOne({ info })
         res.status(201).json({ "user": status })
     } catch (err) {

@@ -46,3 +46,6 @@
     - 500 : Internal Server Error
     - 502 : Bad Gateway
     - 503 : Service Unavailable
+
+6. withCredentials
+    Always set withCredentials: true in you axios or fetch request when it includes cors or cookies(jwt)

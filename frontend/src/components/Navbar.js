@@ -10,7 +10,7 @@ export default function Navbar() {
 
   async function handleLogout() {
     try {
-      const response = await axios.get(`${process.env.REACT_APP_EXPRESS_URL}/api/logout`)
+      const response = await axios.get(`${process.env.REACT_APP_EXPRESS_URL}/api/logout`, { withCredentials: true })
       setAuthenticated(response.data)
     } catch (err) {
       console.log(err)

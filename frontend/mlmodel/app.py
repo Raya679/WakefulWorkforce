@@ -14,8 +14,10 @@ CORS(app)
 def gen_frames():
   
     camera = cv2.VideoCapture(0)
+    count = 0
+    score = 0
     while True:
-        success, frame = camera.read()  # read the camera frame
+        success, frame = camera.read()  
         if not success:
             break
         else:
@@ -31,8 +33,7 @@ def gen_frames():
 
             model = load_model('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/models/DrowsinessDetection.h5')
             font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-            count = 0
-            score = 0
+            
 
             rpred = [99]
             lpred = [99]
@@ -80,6 +81,7 @@ def gen_frames():
             if (rpred[0] == 0 and lpred[0] == 0):
                 score = score+1
                 cv2.putText(frame, "Closed", (10, height-20), font,1, (0, 0, 255), 1, cv2.LINE_AA)
+
             else:
                 score = score-1
                 cv2.putText(frame, "Open", (10, height-20), font,1, (0,255,0), 1, cv2.LINE_AA)
@@ -87,19 +89,19 @@ def gen_frames():
             if (score < 0):
                 score = 0
 
-            cv2.putText(frame, 'Score:'+str(score), (100, height-20),font, 1, (255, 255, 255), 1, cv2.LINE_AA)
-            faces = face.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
-
             if (score > 15 or len(faces) <= 0):
                 sound.play()
                 cv2.rectangle(frame, (0, 0), (width, height), (0, 0, 255))
+
+            cv2.putText(frame, 'Score:'+str(score), (100, height-20),font, 1, (255, 255, 255), 1, cv2.LINE_AA)
+            # faces = face.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
             ret, buffer = cv2.imencode('.jpg', frame)
             frame = buffer.tobytes()
             yield (b'--frame\r\n'
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-    print('outside')
+
 
 @app.route('/')
 def index():

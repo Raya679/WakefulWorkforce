@@ -1,8 +1,105 @@
-# WakefulWorkforce
+<h1 align="center">
+  <!-- <a href="https://github.com/CommunityOfCoders/Inheritance-2023">
+    <img src="https://github.com/CommunityOfCoders/Inheritance-2023" alt="CoC Inheritance 2022" width="500" height="166"> -->
+  </a>
+  <br>
+  Wakeful Workforce
+</h1>
 
-## CONTRIBUTORS:
+<div align="center">
+   <strong>Wakeful Workforce</strong> - A website designed to enhance productivity and attention span for both students and working professionals.<br>
+  <b>CoC Inheritance 2023 || Innovator's Club</b><br> <br>
+</div>
+<hr>
 
-1. Advait Yadav
-2. Anushka Yadav
-3. Richa Sawant
-4. Raya Chakravarty
+<details>
+<summary>Table of Contents</summary>
+
+- [Description](#description)
+- [Links](#links)
+- [Tech Stack](#tech-stack)
+- [Progress](#progress)
+- [Future Scope](#future-scope)
+- [Applications](#applications)
+- [Project Setup](#project-setup)
+- [Usage](#usage)
+- [Team Members](#team-members)
+- [Mentors](#mentors)
+- [Screenshots](#screenshots)
+
+</details>
+
+## 📝Description
+
+Our website is tailored to students and professionals seeking to <b>boost productivity</b> and <b>improve attention span</b>. It provides a complete toolkit with <b>customizable to-do lists and an interactive calendar</b> for effective task management.Moreover, it incorporates a <b>personalized questionnaire</b> upon signup, allowing for tailored recommendations and a more personalized user experience. A <b>drowsiness detection system</b> further sets this platform apart, offering users the ability to maintain alertness during prolonged study or work sessions, ensuring sustained focus and productivity.
+
+- <b>Personalized To-Do List</b>: Allows users to organize tasks and prioritize activities according to their preferences.
+- <b>Calendar</b>: Plan and manage schedules seamlessly with an interactive calendar interface.
+- <b>Personalized Questionnaire</b>: Gather user details upon signup to provide customized user experience.
+- <b>Drowsiness Detection System</b>: Employ advanced technology to detect signs of drowsiness, enabling users to stay awake during extended study or work periods.
+
+## 🔗Links
+
+- [GitHub Repository](https://github.com/Raya679/WakefulWorkforce)
+- [Demo Video]()
+- [Drive Link to Screenshots of your project]()
+- [Hosted Website Link]()
+- [Hosted Backend Link]()
+
+## 🤖Tech-Stack
+
+#### Front-end
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+<br>
+- ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) 
+
+#### Back-end
+- ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+- ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+- ![ExpressJS](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+
+#### Database
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+
+#### Computer Vision
+- ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
+
+## 📈Progress
+
+- [x] Drowsiness Detection System
+- [x] Customizable to-do list and calendar
+- [x] Personalized Questionnaire
+- [ ] Providing analytics of the user
+
+## 🔮Future Scope
+
+- Reward System: Implement a reward system that recognizes and incentivizes user productivity by awarding badges based on accomplishments and task completion
+- Short Breaks: Enhance the drowsiness detection system to provide users with strategically timed short breaks based on their feedback
+
+## 💸Applications
+
+- In terms of applications, our project can be utilized by students to manage their academic workload and deadlines effectively, as well as by professionals to complete their work tasks and meetings. 
+
+## 🛠Project Setup
+
+>Include your project setup basics here. Steps for how someone else can setup your project on their machine. Add any relevant details as well.
+
+## 💻Usage
+
+>Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+
+## 👨‍💻Team Members
+
+
+- [Advait Yadav](https://github.com/TIDYMOUSE) : 
+- [Anushka Yadav](https://github.com/2412anushka) :
+- [Raya Chakravarty](https://github.com/Raya679) : rayachakravarty5@gmail.com
+- [Richa Sawant](https://github.com/richa-sawant) : 
+
+## 👨‍🏫Mentors
+
+- [Kedar Dhamankar](https://github.com/KedarDhamankar)
+- [Dhruv Sapra](https://github.com/)
+
+## 📱Screenshots

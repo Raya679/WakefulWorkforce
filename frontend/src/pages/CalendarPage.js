@@ -24,18 +24,30 @@ function CalendarPage() {
 
     const { token } = theme.useToken();
     const wrapperStyle = {
-        width: 400,
+        width: 600,
         border: `1px solid ${token.colorBorderSecondary}`,
         borderRadius: token.borderRadiusLG,
     };
 
     return (
-        <div className=' flex flex-col p-5 gap-5'>
-            <div style={wrapperStyle} className=' self-center ' >
-                <Calendar fullscreen={false} onPanelChange={onPanelChange} onChange={handleSelect} />
+        <>
+            <div className=' font-bold text-5xl text-center '>
+                Plan your activities!!
             </div>
-            <div>{list}</div>
-        </div>
+            <div className=' flex'>
+                <div className=' ml-36 p-5 gap-5'>
+                    <div style={wrapperStyle} className='self-center'>
+                        <Calendar onPanelChange={onPanelChange} onChange={handleSelect} />
+                    </div>
+                    <div>{list}</div>
+                </div>
+
+                <div className=' w-1/2 mr-7 ml-auto'>
+                    <img src="/calendar.png" alt="my" />
+                </div>
+            </div>
+
+        </>
     )
 }
 

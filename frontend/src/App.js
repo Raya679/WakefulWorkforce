@@ -11,7 +11,7 @@ import Questionnaire from './pages/questionnaire';
 import Dashboard from './pages/dashboard';
 import CalendarPage from "./pages/CalendarPage";
 import DateContextProvider from "./Context/DateContext";
-
+import Profile from "./pages/profile";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/todo" element={<Todo />} />
             <Route path="/calendar" element={<CalendarPage />} />
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
         </DateContextProvider>
       </AuthContextProvider>

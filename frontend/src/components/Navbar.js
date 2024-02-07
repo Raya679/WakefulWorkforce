@@ -27,7 +27,7 @@ export default function Navbar() {
         <Link to="/aboutus" className='mx-7 text-1xl  font-bold px-3 py-2 hover:bg-cyan-400 hover:text-slate-900 rounded-[26px] transition duration-200 ease-out hover:ease-in'>ABOUT US</Link>
         <Link to="/contactus" className='mx-7 text-1xl font-bold px-3 py-2 hover:bg-cyan-400 hover:text-slate-900 rounded-[26px] transition duration-200 ease-out hover:ease-in'>CONTACT US</Link>
         {isAuthenticated ?
-          <Link to="/login" className='mx-4 text-1xl hover:bg-indigo-900 p-1 font-bold border-4 border-cyan-400 rounded-[10px] px-4 py-2 text-2xl ' onClick={async () => { await handleLogout() }}>LOGOUT</Link>
+          <Link to="/login" className='mx-4 text-1xl hover:bg-cyan-400 hover:text-slate-900 p-1 font-bold border-4 border-cyan-400 rounded-[26px] px-4 py-2 text-1xl transition ease-out duration-300 ' onClick={async () => { await handleLogout() }}>LOGOUT</Link>
           :
           <Link to="/login" className='mx-4 text-1xl hover:bg-cyan-400 hover:text-slate-900 p-1 font-bold border-4 border-cyan-400 rounded-[26px] px-4 py-2 text-1xl transition ease-out duration-300'>LOGIN</Link>
         }

@@ -23,15 +23,15 @@ def gen_frames():
         else:
             height, width = frame.shape[:2]
             mixer.init()
-            sound = mixer.Sound('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/alarm.wav')
+            sound = mixer.Sound('WakefulWorkforce/frontend/mlmodel/alarm.wav')
 
-            face = cv2.CascadeClassifier('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_frontalface_alt.xml')
-            leye = cv2.CascadeClassifier('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_lefteye_2splits.xml')
-            reye = cv2.CascadeClassifier('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_righteye_2splits.xml')
+            face = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_frontalface_alt.xml')
+            leye = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_lefteye_2splits.xml')
+            reye = cv2.CascadeClassifier('WakefulWorkforce/frontend/mlmodel/Resources/haarcascade_righteye_2splits.xml')
 
             lbl = ['Close', 'Open']
 
-            model = load_model('/home/advait/Programming/WakefulWorkforce/frontend/mlmodel/models/DrowsinessDetection.h5')
+            model = load_model('WakefulWorkforce/frontend/mlmodel/models/DrowsinessDetection.h5')
             font = cv2.FONT_HERSHEY_COMPLEX_SMALL
             
 

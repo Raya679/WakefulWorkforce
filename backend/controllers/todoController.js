@@ -1,15 +1,18 @@
 const { ObjectId } = require("mongodb");
+const jwt = require("jsonwebtoken")
 const Todo = require("../Models/Todo")
 
 
 module.exports.todo_post = async (req, res) => {
     const { list, day, month, year } = req.body
     try {
-        let todo = await Todo.findOne({ day, month, year })
+        const iD = new ObjectId(jwt.decode(req.cookies.jwt))
+        // console.log(iD)
+        let todo = await Todo.findOne({user_id:iD ,day, month, year })
         if (todo) {
             todo = await todo.updateOne({ list }, { new: true })
         } else {
-            todo = await Todo.create({ list, day, month, year })
+            todo = await Todo.create({ user_id: iD, list, day, month, year })
         }
         res.status(201).json({ "message": todo })
 
@@ -21,13 +24,18 @@ module.exports.todo_post = async (req, res) => {
 
 module.exports.todo_get = async (req, res) => {
     const { day, month, year } = req.query
-    try {
-        const todo = await Todo.findOne({ day, month, year })
-        res.status(200).json({ todo })
-
-
-    } catch (err) {
-        console.log(err)
-        res.status(500).json({ todo: null })
+    const token = req.cookies.jwt;
+    if (token) {
+            try {
+            const iD = new ObjectId(jwt.decode(token))
+            console.log(iD)
+            const todo = await Todo.findOne({ user_id: iD, day, month, year })
+            res.status(200).json({ todo })
+            console.log("hello")
+        }  catch (err) {
+            res.status(500).json({ todo: null })
+        }
+        
     }
+    
 }

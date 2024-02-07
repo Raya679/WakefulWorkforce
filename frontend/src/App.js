@@ -9,7 +9,6 @@ import { Route, Routes } from "react-router-dom"
 import AboutUs from './pages/AboutUs';
 import Questionnaire from './pages/questionnaire';
 import Dashboard from './pages/dashboard';
-import Session from './pages/session';
 import CalendarPage from "./pages/CalendarPage";
 import DateContextProvider from "./Context/DateContext";
 

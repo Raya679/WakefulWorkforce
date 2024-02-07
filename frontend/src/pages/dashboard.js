@@ -1,6 +1,7 @@
 import React from 'react';
 import useAuthContext from '../hooks/useAuthContext';
 import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
 
@@ -27,13 +28,13 @@ const Dashboard = () => {
                     <button className=" bg-cyan-400  text-white font-semibold text-xl py-2 px-4 rounded-full self-end  hover:bg-red-500 transition ">Start session</button>
                 </div>
 
-                <div className="flex items-center justify-center my-6 h-auto bg-black  border-white border-2  p-6  gap-3  hover:cursor-pointer ">
+                <Link className="flex items-center justify-center my-6 h-auto bg-black  border-white border-2  p-6  gap-3  hover:cursor-pointer " to="/todo">
                     <img src="./to-do-list.png" alt="todo" className="size-24" />
                     <div>
                         <div className="text-white text-2xl font-fedroka font-bold  ">Open To-do List</div>
                         <div className='text-gray-400 text-lg font-fedroka  '> Hello world, this is new</div>
                     </div>
-                </div>
+                </Link>
 
                 <div className="flex  items-center justify-center my-6 h-auto gap-6 border-white border-2 p-6 bg-black  hover:cursor-pointer ">
                     <img src="./calenderdashboard.png" alt="calendar" className="size-20 " />

@@ -1,7 +1,11 @@
+const { ObjectId } = require("mongodb");
 const mongoose = require("mongoose")
 const Schema = require("mongoose")
 
 const TodoSchema = new mongoose.Schema({
+    user_id: {
+        type:ObjectId
+    },
     list: {
         type: [String],
     },

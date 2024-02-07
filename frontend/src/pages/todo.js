@@ -51,8 +51,8 @@ function Todo() {
     useEffect(() => {
         async function handleGetAll() {
             try {
-                const url = `/api/todoALL?day=${date.day}&month=${date.month}&year=${date.year}`
-                const response = await axios.get(url)
+                const url = process.env.REACT_APP_EXPRESS_URL + `/api/todoALL?day=${date.day}&month=${date.month}&year=${date.year}`
+                const response = await axios.get(url, {withCredentials:true})
                 if (response.status === 200) {
                     if (response.data.todo) {
                         setlist(response.data.todo.list)

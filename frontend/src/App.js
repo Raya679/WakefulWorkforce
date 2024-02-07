@@ -12,11 +12,11 @@ import Dashboard from './pages/dashboard';
 import CalendarPage from "./pages/CalendarPage";
 import DateContextProvider from "./Context/DateContext";
 import Profile from "./pages/profile";
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-
-    <div className="bg-slate-900 text-white min-h-screen min-w-full ">
+    <div className="bg-slate-900 text-white min-h-screen min-w-full">
       <AuthContextProvider>
         <DateContextProvider>
           <Navbar />
@@ -30,12 +30,12 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/todo" element={<Todo />} />
             <Route path="/calendar" element={<CalendarPage />} />
-            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </DateContextProvider>
       </AuthContextProvider>
-    </div >
-
+    </div>
   );
 }
 

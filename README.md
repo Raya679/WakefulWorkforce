@@ -109,7 +109,7 @@ Setup Backend
 - [Advait Yadav](https://github.com/TIDYMOUSE) : advaityadav08@gmail.com
 - [Anushka Yadav](https://github.com/2412anushka) : anushkasachin2003@gmail.com
 - [Raya Chakravarty](https://github.com/Raya679) : rayachakravarty5@gmail.com
-- [Richa Sawant](https://github.com/richa-sawant) : richasawant2004@gmail.co\
+- [Richa Sawant](https://github.com/richa-sawant) : richasawant2004@gmail.com
 
 ## 👨‍🏫Mentors
 

@@ -100,7 +100,7 @@ Setup Backend
 
 `cd backend` <br>
 `npm i` <br>
-`nodemon server`
+`nodemon server.js`
 
 
 ## 👨‍💻Team Members
@@ -132,3 +132,4 @@ Setup Backend
 ![StartSessionClosed](https://github.com/Raya679/WakefulWorkforce/assets/113240231/4335bba6-86f7-4424-8405-50e684cd159c)
 
 ![ProfilePage](https://github.com/Raya679/WakefulWorkforce/assets/113240231/de9fedd1-8c9d-4bfe-8d06-5e5f89f8d643)
+

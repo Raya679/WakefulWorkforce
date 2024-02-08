@@ -100,11 +100,10 @@ Setup Backend
 
 `cd backend` <br>
 `npm i` <br>
-`npm start`
+`nodemon server`
 
 
 ## 👨‍💻Team Members
-
 
 - [Advait Yadav](https://github.com/TIDYMOUSE) : advaityadav08@gmail.com
 - [Anushka Yadav](https://github.com/2412anushka) : anushkasachin2003@gmail.com

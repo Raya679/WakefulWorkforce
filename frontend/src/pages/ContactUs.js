@@ -71,12 +71,12 @@ const ContactUs = () => {
                             <div className=' text-5xl font-bold'>May Be One Of These Top FAQ's Can Help:</div>
                             <div className=' mt-16 w-11/12'>
                                 <ul>
-                                    <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</li>
-                                    <li className='ans text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab expedita illum labore mollitia obcaecati incidunt voluptatem eveniet harum ea?</li>
-                                    <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</li>
-                                    <li className='ans text-2xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nostrum laborum ipsum. Dolorem quae quaerat debitis?</li>
-                                    <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit?</li>
-                                    <li className='ans text-2xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nostrum laborum ipsum. Dolorem quae quaerat debitis?</li>
+                                <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>How will this website help me increase my productivity?</li>
+                                    <li className='ans text-2xl'>Our drowsiness detection website offers a comprehensive suite of productivity features designed to help users stay organized, focused, and achieve their goals effectively. With intuitive tools such as a to-do list, planner, and focused work sessions, users can maximize their productivity and manage their tasks with ease.</li>
+                                    <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>How does the focus session work?</li>
+                                    <li className='ans text-2xl'>The website continuously monitors users' facial expressions and eye movements in real-time using computer vision techniques. By analyzing facial features and eye behaviors, it can detect signs of drowsiness, such as drooping.this feature will help users meet deadlines and increase their productivity.</li>
+                                    <li className="quest mt-5 mb-3 text-3xl font-bold" style={{ listStyleType: 'disc', marginBottom: '8px' }}>how will this website help me increase my attention span?</li>
+                                    <li className='ans text-2xl'>This drowsiness detection website helps increase attention span by providing timely alerts when signs of drowsiness are detected thus users can maintain sustained attention levels and improve productivity.</li>
                                 </ul>
 
                             </div>
@@ -86,7 +86,7 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center text-6xl font-bold w-full mt-28">We'd Love To Hear From You!</div>
+                    <div className="flex items-center justify-center text-6xl font-bold w-full mt-48">We'd Love To Hear From You!</div>
                     <div className="mt-10 flex">
                         <div className=" mt-20 w-[572px] h-[543px] text-center text-white text-[40px] items-center justify-center">
                             <img className=" mt-16 ml-32" src='/newcontact2.png' alt="My" />

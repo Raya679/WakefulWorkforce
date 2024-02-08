@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+/* .App {
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.blank{
+  background-color: rgb(0, 247, 255);
+}
+
+
+
+@keyframes underlineExpand {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+.underline-animation {
+  @apply cursor-pointer relative text-white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: transparent;
+    transform-origin: 50% 100%;
+    transform: scaleX(0);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  &:hover::before {
+    background-color: #27EDED;
+    animation: underlineExpand 0.3s ease forwards;
+  }
+} */

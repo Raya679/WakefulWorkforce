@@ -1,0 +1,1 @@
+rpred = np.argmax(model.predict(r_eye), axis=-1)

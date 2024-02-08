@@ -41,7 +41,7 @@ Our website is tailored to students and professionals seeking to <b>boost produc
 
 - [GitHub Repository](https://github.com/Raya679/WakefulWorkforce)
 - [Demo Video]()
-- [Drive Link to Screenshots of your project]()
+- [Drive Link to Screenshots of your project](https://drive.google.com/drive/folders/1NBlY3LtyoQt7ZYK2rsnmpxDRz_dNMjmt)
 - [Hosted Website Link]()
 - [Hosted Backend Link]()
 
@@ -117,3 +117,19 @@ Setup Backend
 - [Dhruv Sapra](https://github.com/)
 
 ## 📱Screenshots
+
+![Homepage](https://drive.google.com/file/d/1UCKTPJIoLy33dYbz7gCF-1eh_AtT-byZ/view?usp=sharing)
+
+![Dashboard](https://drive.google.com/file/d/10tea4sfjFDUFTUVPwwwj5NNuKImh7qVD/view?usp=drive_link)
+
+![ToDoList](https://drive.google.com/file/d/12ObsKftNyuWA-pTjJ6RwhUVxF-tGNeZ9/view?usp=drive_link)
+
+![Calendar](https://drive.google.com/file/d/1HI9-jQ4vd8hHqNUWw8XYpwTqfmlZpX88/view?usp=drive_link)
+
+![Questionnaire](https://drive.google.com/file/d/19uLKK8jbmDJp-qZGaQJsales-yGn4tVS/view?usp=drive_link)
+
+![StartSessionOpen](https://drive.google.com/file/d/1koAYrDuem4Ngp-2LN2FdcRIMI_aiFr6I/view?usp=drive_link)
+
+![StartSessionClosed](https://drive.google.com/file/d/1a0nR2WtnkIHpBM_8YUtZ2x7mTI2rKa1i/view?usp=drive_link)
+
+![ProfilePage](https://drive.google.com/file/d/1SKPc-LUD4m6i1FAhNP3cD2b1IcwV59y1/view?usp=drive_link)

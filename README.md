@@ -22,7 +22,6 @@
 - [Future Scope](#future-scope)
 - [Applications](#applications)
 - [Project Setup](#project-setup)
-- [Usage](#usage)
 - [Team Members](#team-members)
 - [Mentors](#mentors)
 - [Screenshots](#screenshots)
@@ -82,19 +81,35 @@ Our website is tailored to students and professionals seeking to <b>boost produc
 
 ## 🛠Project Setup
 
->Include your project setup basics here. Steps for how someone else can setup your project on their machine. Add any relevant details as well.
+Start by cloning the repo
 
-## 💻Usage
+`git clone https://github.com/Raya679/WakefulWorkforce.git`
 
->Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+Setup the flask server
+
+`cd mlmodel` <br>
+`python app.py`
+
+Setup the Frontend
+
+`cd frontend` <br>
+`npm i` <br>
+`npm start`
+
+Setup Backend 
+
+`cd backend` <br>
+`npm i` <br>
+`npm start`
+
 
 ## 👨‍💻Team Members
 
 
-- [Advait Yadav](https://github.com/TIDYMOUSE) : 
-- [Anushka Yadav](https://github.com/2412anushka) :
+- [Advait Yadav](https://github.com/TIDYMOUSE) : advaityadav08@gmail.com
+- [Anushka Yadav](https://github.com/2412anushka) : anushkasachin2003@gmail.com
 - [Raya Chakravarty](https://github.com/Raya679) : rayachakravarty5@gmail.com
-- [Richa Sawant](https://github.com/richa-sawant) : 
+- [Richa Sawant](https://github.com/richa-sawant) : richasawant2004@gmail.co\
 
 ## 👨‍🏫Mentors
 

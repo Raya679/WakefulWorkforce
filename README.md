@@ -40,10 +40,10 @@ Our website is tailored to students and professionals seeking to <b>boost produc
 ## 🔗Links
 
 - [GitHub Repository](https://github.com/Raya679/WakefulWorkforce)
-- [Demo Video]()
+- [Demo Video](https://drive.google.com/file/d/10FY-8mr5NcXH8hWReojwDOJFubiBfsbS/view)
 - [Drive Link to Screenshots of your project](https://drive.google.com/drive/folders/1NBlY3LtyoQt7ZYK2rsnmpxDRz_dNMjmt)
-- [Hosted Website Link]()
-- [Hosted Backend Link]()
+<!-- - [Hosted Website Link]()
+- [Hosted Backend Link]() -->
 
 ## 🤖Tech-Stack
 
@@ -118,18 +118,18 @@ Setup Backend
 
 ## 📱Screenshots
 
-![Homepage](https://drive.google.com/file/d/1UCKTPJIoLy33dYbz7gCF-1eh_AtT-byZ/view?usp=sharing)
+![Homepage](https://github.com/Raya679/WakefulWorkforce/assets/113240231/f923887e-258a-478a-ba3b-0b955c16d020)
 
-![Dashboard](https://drive.google.com/file/d/10tea4sfjFDUFTUVPwwwj5NNuKImh7qVD/view?usp=drive_link)
+![Dashboard](https://github.com/Raya679/WakefulWorkforce/assets/113240231/ed9a4457-978a-452f-9c0d-4ff2baf9a86a)
 
-![ToDoList](https://drive.google.com/file/d/12ObsKftNyuWA-pTjJ6RwhUVxF-tGNeZ9/view?usp=drive_link)
+![ToDoList](https://github.com/Raya679/WakefulWorkforce/assets/113240231/8323b47f-06c3-4c6a-82e7-eae0cfa0ee8f)
 
-![Calendar](https://drive.google.com/file/d/1HI9-jQ4vd8hHqNUWw8XYpwTqfmlZpX88/view?usp=drive_link)
+![Calendar](https://github.com/Raya679/WakefulWorkforce/assets/113240231/5bc44885-f627-4850-aa2c-c3c4b0951ea8)
 
-![Questionnaire](https://drive.google.com/file/d/19uLKK8jbmDJp-qZGaQJsales-yGn4tVS/view?usp=drive_link)
+![Questionnaire](https://github.com/Raya679/WakefulWorkforce/assets/113240231/0e721919-bcc4-4ff5-8dfd-bcf4194e12da)
 
-![StartSessionOpen](https://drive.google.com/file/d/1koAYrDuem4Ngp-2LN2FdcRIMI_aiFr6I/view?usp=drive_link)
+![StartSessionOpen](https://github.com/Raya679/WakefulWorkforce/assets/113240231/9c49d7ba-a59c-4545-b9cd-dab84fbed464)
 
-![StartSessionClosed](https://drive.google.com/file/d/1a0nR2WtnkIHpBM_8YUtZ2x7mTI2rKa1i/view?usp=drive_link)
+![StartSessionClosed](https://github.com/Raya679/WakefulWorkforce/assets/113240231/4335bba6-86f7-4424-8405-50e684cd159c)
 
-![ProfilePage](https://drive.google.com/file/d/1SKPc-LUD4m6i1FAhNP3cD2b1IcwV59y1/view?usp=drive_link)
+![ProfilePage](https://github.com/Raya679/WakefulWorkforce/assets/113240231/de9fedd1-8c9d-4bfe-8d06-5e5f89f8d643)
